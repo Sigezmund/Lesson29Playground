@@ -10,4 +10,8 @@ class MainViewModel(private val player: CustomAudioPlayer) : ViewModel() {
     fun pause() {
         player.pause()
     }
+
+    override fun onCleared() {
+        player.release()
+    }
 }

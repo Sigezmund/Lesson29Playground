@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Lesson29Playground"
 include ':app'
+include ':coroutines'
+include ':receivers'

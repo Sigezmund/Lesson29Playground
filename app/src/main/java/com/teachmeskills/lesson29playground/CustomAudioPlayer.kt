@@ -13,6 +13,7 @@ class CustomAudioPlayer(context: Context) {
             context.assets.openFd("example.mp3").use { afd ->
                 mediaPlayer.setDataSource(afd.fileDescriptor)
                 mediaPlayer.prepare()
+                mediaPlayer.isLooping = true
             }
         } catch (e: IOException) {
             Log.i("ttt", e.message.orEmpty())
